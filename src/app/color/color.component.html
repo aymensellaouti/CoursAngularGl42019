@@ -1,0 +1,21 @@
+<div  [style.backgroundColor]="color">
+  color works!
+</div>
+
+
+<input
+  type="text"
+  class="form-control"
+  #inputColor
+  (change)="changeColor(inputColor.value)"
+  [(ngModel)]="color"
+>
+
+<button
+  class="btn btn-danger"
+  (click)="resetDefaultColor()"
+>
+  Reset Color
+</button>
+
+La couleur est : {{color}}

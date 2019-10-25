@@ -1,0 +1,15 @@
+<p [ngStyle]="{
+  'color': color,
+  'font-family' : font,
+  'backgroundColor':  bg,
+  'font-size': size + 'px'
+}">
+Mon Paragraphe
+</p>
+Couleur: <input type="color" class="form-control" [(ngModel)]="color">
+Taille: <input type="number" class="form-control" [(ngModel)]="size">
+<select [(ngModel)]="font">
+  <option value="Garamond">Garamond</option>
+  <option value="Arial">Arial</option>
+  <option value="Verdana">Verdana</option>
+</select>
