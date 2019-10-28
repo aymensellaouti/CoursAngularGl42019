@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 import {Personne} from '../Model/personne';
 
-const API_LINK = 'http://localhost:3000/api/personnes';
-
 @Injectable({
   providedIn: 'root'
 })
